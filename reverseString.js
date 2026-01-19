@@ -12,4 +12,22 @@ function reverseS(s){
     return r
 }
 
-console.log(reverseS(sp))
+console.log(reverseS(sp));
+
+// add upto n number 
+
+let num =8 ;
+function addUptoN(num){
+    let total=0;
+    for(let i =1;i<=num; i++){
+        total+=i
+    }
+    return total
+}
+console.log(addUptoN(num));
+
+function secondWayToAdd(n){
+    return n*(n+1)/2
+}
+console.log(secondWayToAdd(num));
+
