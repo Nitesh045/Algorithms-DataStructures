@@ -31,3 +31,6 @@ function secondWayToAdd(n){
 }
 console.log(secondWayToAdd(num));
 
+
+//object ,unorderd , key value pair
+
