@@ -34,3 +34,9 @@ console.log(secondWayToAdd(num));
 
 //object ,unorderd , key value pair
 
+// * understand the problems 
+// explore concrete example
+// break it down
+// solve / simplify
+// look back and refactor always in the code 
+
