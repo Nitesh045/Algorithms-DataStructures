@@ -158,4 +158,26 @@ function constructNote(letter,message){
   
 }
 
-console.log(constructNote('aa','abc'))
+console.log(constructNote('ab','abc'))
+
+function findAlllDublicate(arr){
+   
+   let dublicateArr=[];
+   let val={};
+    
+   for(let char of arr){
+      
+      val[char]=(val[char] || 0) +1
+   }
+   
+   for(key in val){
+      console.log(key)
+      if(val[key]>1){
+         dublicateArr.push(val[key])
+         val[key]--
+      }
+   }
+   return dublicateArr
+}
+
+console.log(findAlllDublicate([4, 3, 2, 7, 8, 2, 3])); // -> [2, 3]
