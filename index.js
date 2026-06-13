@@ -181,3 +181,20 @@ function findAlllDublicate(arr){
 }
 
 console.log(findAlllDublicate([4, 3, 2, 7, 8, 2, 3])); // -> [2, 3]
+
+console.log(zeroSumPair([-3,-2,-1,0,1,2,3]));
+
+function areThereDuplicates(...args){
+   let lookup = {};
+   for(let val of args){
+      lookup[val] ? (lookup[val] += 1) : (lookup[val] = 1);
+   }
+   for(let key in lookup){
+      if(lookup[key] > 1){
+         return true;
+      }
+   }
+   return false;
+}
+
+console.log(areThereDuplicates(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20));
